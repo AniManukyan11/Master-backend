@@ -68,7 +68,7 @@ const {error} = loginSchema.validate(req.body);
     const data = await User.findOne({where: {email:email}})
     if(data.email === email && data.password===hashed_password  ){
         const token = generateAccessToken(data.id, data.role,email);
-        res.status(200).json({message:"Logged in!",token:token,role:data.role})
+        res.status(200).json({message:"Logged in!",token:token,role:data.role,userId:data.id })
       }
       }  
       catch(err){

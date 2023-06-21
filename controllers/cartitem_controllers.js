@@ -5,7 +5,7 @@ const {CartItem} = require('../models');
     try{
         const {quantity, cartId, productId} = req.body;
         await CartItem.create({quantity, cartId, productId})
-        res.status(201).json({message: "Cart created"} )
+        res.status(201).json({message: "CartItem created"} )
     }
     catch(err){
         res.status(500).json({message: err.message})

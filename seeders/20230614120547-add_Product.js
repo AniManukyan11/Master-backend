@@ -95,14 +95,7 @@ module.exports = {
  
       }
       ,
-      // {
-      //   firstName: 'Jane',
-      //   lastName: 'Doe',
-      //   email: 'jane.doe@example.com',
-      //   createdAt: new Date(),
-      //   updatedAt: new Date(),
-      // },
-
+    
 
     ], {});
   },
